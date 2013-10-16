@@ -1,0 +1,3 @@
+/** EDITOR **/
+div#editor button { padding: 4px; border-radius: 2px; background-color: #a8bbcb; color: #FFF; border: 0; font-weight: 600; }
+div#editor button:hover{ background-color: #FFF; color: #666; }

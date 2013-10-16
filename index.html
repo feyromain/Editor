@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="js/editor.js"> </script>
+    </head>
+    <body>
+        <div id="editor">
+            <button type='button' value='[b]|[/b]'>Gras</button>
+            <button type='button' value='[i]|[/i]'>Italique</button>
+            <button type='button' value='[u]|[/u]'>Souligné</button>
+            <button type='button' value='[h1]|[/h1]'>H1</button>
+            <button type='button' value='[h2]|[/h2]'>H2</button>
+            <button type='button' value='[h3]|[/h3]'>H3</button>
+            <button type='button' value='[h4]|[/h4]'>H4</button>
+            <button type='button' value='[video]|[/video]'>Video</button>
+            <button type='button' value='[url=|][/url]'>Url</button>
+        </div>
+        <form action="" method="POST">
+            <p><label>Contenu :</label><textarea id='body'></textarea></p>
+            <p class="center"><input type="submit" value="Editer" /></p>
+        </form>
+    </body>
+</html>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    $('#editor').editor('#body');
+});
+</script>
